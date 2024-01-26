@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body dir="rtl">
+    <form action="http://localhost:8080/vote" method="post">
+        <label for="name" >نام</label ><br />
+        <input id="name" name="name" required><br />
+        <label for="email" >ایمیل</label><br />
+        <input id="email" name="email" type="email" required><br />
+        <span>از چه سرویس‌هایی استفاده کردید؟</span>
+        <input id="sauna" name="services" type="checkbox" value="sauna">
+        <label for="sauna" >سونا</label>
+        <input id="jacuzzi" name="services" type="checkbox" value="jacuzzi">
+        <label for="jacuzzi">جکوزی</label>
+        <input id="pool"  name="services" type="checkbox" value="pool">
+        <label for="pool">استخر</label><br /><br />
+        <span>آیا از کیفیت سرویس ارائه شده راضی بودید؟</span>
+        <input id="yes" type="radio" name="satisfaction" value="yes">
+        <label for="yes">بله</label>
+        <input id="no" type="radio" name="satisfaction" value="no">
+        <label for="no">خیر</label><br /> <br />  
+        <select id="branch" name="branch" placeholder="انتخاب شعبه">
+            <option selected disabled="" > انتخاب شعبه</option>
+            <option value="1">شعبه 1</option>
+            <option value="2">شعبه 2</option>
+            <option value="3">شعبه 3</option>
+            <option value="4">شعبه 4</option>
+        </select>
+        <br/><br/>
+        <label for="score">امتیاز</label><br />
+        <input id="score" name="score" type="number" min="1" max="5" value="score" required>
+        <br /><br />
+        <input type="submit" value="ثبت">
+    </form>
+</body>
+
+</html>
